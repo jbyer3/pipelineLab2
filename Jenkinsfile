@@ -4,19 +4,19 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        echo 'now building from build number ${BUILD_NUMBER}'
+        echo "now building from build number ${BUILD_NUMBER}"
         echo 'whats really good??'
       }
     }
     stage('Test'){
       steps {
-        echo 'now testing from build number ${BUILD_NUMBER}'
+        echo "now testing from build number ${BUILD_NUMBER}"
         echo 'whats really good??'
       }
     }
     stage('Deploy'){
       steps {
-        echo 'now deploying from build number ${BUILD_NUMBER}'
+        echo "now deploying from build number ${BUILD_NUMBER}"
         echo 'the build duration is ${currentBuild.duration}'
       }
     }
