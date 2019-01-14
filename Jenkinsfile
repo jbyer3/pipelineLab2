@@ -5,13 +5,13 @@ pipeline {
     stage('Build') {
       steps {
         echo 'now building from build number ${BUILD_NUMBER}'
-        sh 'make'
+        echo 'whats really good??'
       }
     }
     stage('Test'){
       steps {
-        sh 'make check'
-        junit '**/target/*.xml'
+        echo 'now testing from build number ${BUILD_NUMBER}'
+        echo 'whats really good??'
       }
     }
     stage('Deploy'){
